@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="calculator" name="calc">
+        <input type="text" readonly class="value" name="txt" />
+        <span class="num clear" onclick="calc.txt.value=''">c</span>
+        <span class="num" onclick="appendCharacter('/')">/</span>
+        <span class="num" onclick="appendCharacter('*')">*</span>
+        <span class="num" onclick="appendCharacter('7')">7</span>
+        <span class="num" onclick="appendCharacter('8')">8</span>
+        <span class="num" onclick="appendCharacter('9')">9</span>
+        <span class="num" onclick="appendCharacter('-')">-</span>
+        <span class="num" onclick="appendCharacter('4')">4</span>
+        <span class="num" onclick="appendCharacter('5')">5</span>
+        <span class="num" onclick="appendCharacter('6')">6</span>
+        <span class="num plus" onclick="appendCharacter('+')">+</span>
+        <span class="num" onclick="appendCharacter('1')">1</span>
+        <span class="num" onclick="appendCharacter('2')">2</span>
+        <span class="num" onclick="appendCharacter('3')">3</span>
+        <span class="num" onclick="appendCharacter('0')">0</span>
+        <span class="num" onclick="appendCharacter('00')">00</span>
+        <span class="num" onclick="appendCharacter('.')">.</span>
+        <span class="num equal" onclick="calculate()">=</span>
+    </form>
+
+</div>
+
+
+<script src="scripts.js"></script>
+
+
+
+</body>
+</html>
